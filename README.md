@@ -1,7 +1,7 @@
 # wave-dsl
 
 A DSL for [segmod](https://github.com/lucdoebereiner/segmod) which allows to easily define frequencies/indexes repetitions.
-
+Live demo: [wave-dsl](http://firmanty.com/wave)
 ## Syntax
 * `[]*N` defines that whole expresion in square brackets should be repeated N times
 * `<DURATION FREQ/INDEX>` defines a cell. `DURATION` is one of:
