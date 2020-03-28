@@ -22,4 +22,17 @@
       [:h2 "Output"]
       [:textarea {:cols 40 :rows 5
                   :style style
-                  :value (clojure.string/join " " @output)}]]]))
+                  :value (clojure.string/join " " @output)}]
+      [:h2 "Example programs:"]
+      [:div
+       [:pre
+        [:code "#repeat-1-only-once
+<si 1>"]]]
+      [:div
+       [:pre
+        [:code "#grain-1-and-grain-2-sequence-repeated-twice
+[<g 1> <g 2>]*2"]]]
+      [:div
+       [:pre
+        [:code "#nested-sequences-example
+[[<si 1> <si 2>]*4 <si 3> <si 4>]*2"]]]]]))
