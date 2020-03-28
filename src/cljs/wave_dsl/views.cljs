@@ -10,7 +10,8 @@
                :font-size "14px"}]
     [:article
      [:h1 "Wave dsl"]
-     "Custom dsl for " [:a {:href "https://github.com/lucdoebereiner/segmod"} "segmod"]
+     [:p "Custom dsl for " [:a {:href "https://github.com/lucdoebereiner/segmod"} "segmod"]]
+     [:p "More information about usage can be found here: " [:a {:href "https://github.com/kfirmanty/wave-dsl/blob/master/README.md"} "README"]]
      [:section
       [:h2 "Program"]
       [:textarea {:cols 40 :rows 5
