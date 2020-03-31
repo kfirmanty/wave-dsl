@@ -13,7 +13,7 @@
  ::parse-input
  (fn [db _]
    (let [program (db/input db)]
-     (db/set-parser-output db (parser/parse program)))))
+     (db/set-parser-output db (parser/parse program (rand-int 10000))))))
 
 (re-frame/reg-event-db
  ::update-input
