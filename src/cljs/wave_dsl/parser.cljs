@@ -64,3 +64,6 @@ WS=#'\\s+' | #'\\n+'"))
    (reset! seed seed-val)
    (let [parsed (parser program)]
      (flatten (resolve-parsed parsed)))))
+
+(defn ^:export parse->js [program seed-val]
+  (clj->js (parse program (or seed-val 1))))
