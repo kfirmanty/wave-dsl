@@ -2,7 +2,12 @@
 
  :nrepl {:port 8777}
 
- :builds {:app {:target          :browser
+ :builds {:parser-only {:target :browser
+                        :output-dir "../web/compiled"
+                        :compiler-options {:optimizations :simple
+                                           :source-map false}
+                        :modules {:parser-only {:entries [wave-dsl.parser]}}}
+          :app {:target          :browser
                 :output-dir      "resources/public/js/compiled"
                 :asset-path      "/js/compiled"
                 :modules         {:app {:init-fn wave-dsl.core/init
